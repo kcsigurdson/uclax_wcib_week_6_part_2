@@ -11,16 +11,138 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
 
   <body>
 
-    <h1>Week 6, Part 1</h1>
+    <nav class="site-header sticky-top py-1">
+ <div class="container d-flex flex-column flex-md-row justify-content-between">
+   <a class="py-2" href="#" aria-label="Product">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+   </a>
+ </div>
+</nav>
 
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light top-box">
+ <div class="col-md-5 p-lg-5 mx-auto my-5">
+   <h1 class="display-4">Introducing PopPower!</h1>
+   <p class="lead font-weight-normal top-p">The newest line of drinks from Pop: PopPower. Energy drinks for every kind of lifestyle. Whether you need a sugar rush, a second wind, or a natural boost of energy, we've got you covered with our three new formulas. Find out which PopPower drink is best for you!</p>
+   <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#quizModalScrollable">Take the Quiz</button>
+ </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+ <div class="bg-dark mr-md-4 pt-4 px-4 pt-md-6 px-md-6 text-center text-black overflow-hidden first-box">
+   <div class="my-3 py-3">
+     <h2 class="display-5">tropical</h2>
+     <p class="lead">Do you just need a break? PopPower: Tropical is the perfect energy drink for any vacation. Catch your second wind while you catch some rays with this tropical fruit flavored PopPower.</p>
+   </div>
+   <div class="bg-light shadow-sm mx-auto tropical-img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+ </div>
+ <div class="bg-light mr-md-4 pt-4 px-4 pt-md-6 px-md-6 text-center overflow-hidden text-blue">
+   <div class="my-3 p-3">
+     <h2 class="display-5">natural</h2>
+     <p class="lead">Are you sick of the artificial energy drinks? Do you need a natural pick me up? Our PopPower: Natural is made from all organic ingredients. Get a boost from B12, green tea extract, and natural sugars.</p>
+   </div>
+   <div class="bg-dark shadow-sm mx-auto natural-img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+ </div>
+
+ <div class="mr-md-4 pt-4 px-4 pt-md-6 px-md-6 text-center overflow-hidden text-white third-box">
+   <div class="my-3 p-3">
+     <h2 class="display-5">extreme</h2>
+     <p class="lead">If you want to be bouncing off the walls, our extreme PopPower is for you. This formula is loaded with as much sugar and caffiene as we are legally allowed to sell in one serving.</p>
+   </div>
+   <div class="bg-dark shadow-sm mx-auto extreme-img" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+ </div>
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="quizModalScrollable" tabindex="-1" role="dialog" aria-labelledby="quizModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quizModalScrollableTitle">Which PopPower is right for you?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <ol>
+            <li>
+              <p class="quiz">Time to book your dream vacation, where to?</p>
+              <ol type="A">
+                <li><label class="radioButtonPadding" for="trop1"> A beach far from home</label><input id="trop1" type="radio" name="q1" value="trop1"></li>
+                <li><label class="radioButtonPadding" for="nat1"> A yoga retreat in the mountains</label><input id="nat1" type="radio" name="q1" value="nat1"></li>
+                <li><label class="radioButtonPadding" for="ext1"> A European Grand Prix race</label><input id="ext1" type="radio" name="q1" value="ext1"></li>
+              </ol>
+            </li>
+
+            <li>
+              <p class="quiz">Pick a color scheme:</p>
+              <ol type="A">
+                <li><label class="radioButtonPadding" for="trop2"> I love a good pastel</label><input id="trop2" type="radio" name="q2" value="trop2"></li>
+                <li><label class="radioButtonPadding" for="nat2"> Earth tones for me</label><input id="nat2" type="radio" name="q2" value="nat2"></li>
+                <li><label class="radioButtonPadding" for="ext2"> Neon!!!</label><input id="ext2" type="radio" name="q2" value="ext2"></li>
+              </ol>
+            </li>
+
+            <li>
+              <p class="quiz">Your drink of choice?</p>
+              <ol type="A">
+                <li><label class="radioButtonPadding" for="trop3"> A refreshing margarita</label><input id="trop3" type="radio" name="q3" value="trop3"></li>
+                <li><label class="radioButtonPadding" for="nat3"> Something organic</label><input id="nat3" type="radio" name="q3" value="nat3"></li>
+                <li><label class="radioButtonPadding" for="ext3"> Anything with sugar</label><input id="ext3" type="radio" name="q3" value="ext3"></li>
+              </ol>
+            </li>
+
+            <li>
+              <p class="quiz">Describe your style</p>
+              <ol type="A">
+                <li><label class="radioButtonPadding" for="trop4"> Hawaiin shirts and flip flops</label><input id="trop4" type="radio" name="q4" value="trop4"></li>
+                <li><label class="radioButtonPadding" for="nat4"> Boho</label><input id="nat4" type="radio" name="q4" value="nat4"></li>
+                <li><label class="radioButtonPadding" for="ext4"> Sporty</label><input id="ext4" type="radio" name="q4" value="ext4"></li>
+              </ol>
+            </li>
+          </ol>
+      </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="closeModal" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id ="submitQ" class="btn btn-outline-secondary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="resultModalCenter" tabindex="-1" role="dialog" aria-labelledby="resultModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resultModalCenterTitle">Your Result</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <div id="result-display-here"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container py-5">
+
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 	</body>
 
 </html>

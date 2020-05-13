@@ -1,0 +1,204 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+body{
+  background-color: black;
+  //background-image: url("../images/background.jpg");
+  //background-size: cover;
+  //background-position: bottom;
+  .top-box {
+      background-image: url("../images/all.png")!important;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .top-p{
+    color: white;
+  }
+  h1 {
+    //display: block;
+    font-size: 20em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Charcoal, sans-serif;
+    color: white;
+}
+
+.quiz {
+  padding-top: 2em;
+  //font-weight: bold;
+}
+
+
+  }
+
+  .btn-outline-secondary {
+      color: black;
+      border-color: #ffff00;
+      background-color: #ffff00;
+  }
+
+  .btn {
+      display: inline-block;
+      font-weight: 400;
+      /* color: #212529; */
+      text-align: center;
+      vertical-align: middle;
+      /* -webkit-user-select: none; */
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* background-color: transparent; */
+      /* border: 1px solid transparent; */
+      padding: .8rem 2rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.display-4 {
+    font-size: 3.5rem;
+    //font-weight: 300;
+    line-height: 1.2;
+    font-weight: bold;
+}
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+ .first-box {
+  background-color: #CDAA60!important;
+  color: white;
+  border-radius: 21px 21px 0 0;
+}
+
+.tropical-img {
+  background-image: url("../images/yellowcanLogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-blue{
+  color: #243A8F;
+}
+
+.natural-img{
+  background-image: url("../images/bluecanLogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-light, .third-box {
+  background-color: #C63353;
+  border-radius: 21px 21px 0 0;
+}
+
+.extreme-img{
+  background-image: url("../images/redcanLogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.text-red{
+  color: #C63353;
+}
+//
+// .product-device::before {
+//   position: absolute;
+//   top: 10%;
+//   right: 10px;
+//   bottom: 10%;
+//   left: 10px;
+//   content: "";
+//   background-color: rgba(255, 255, 255, .1);
+//   border-radius: 5px;
+// }
+//
+// .product-device-2 {
+//   top: -25%;
+//   right: auto;
+//   bottom: 0;
+//   left: 5%;
+//   background-color: #e5e5e5;
+// }
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .col-md-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 0;
+      max-width: 75%;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+h2{
+  padding: 2rem;
+}
+
+.radioButtonPadding{
+  padding-right: 6px;
+  padding-left: 10px;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 200%; /* respsonsive width */
+    margin-left:-40%; /* width/2) */
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
