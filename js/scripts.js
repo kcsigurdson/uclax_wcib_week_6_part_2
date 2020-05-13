@@ -72,7 +72,6 @@ submitQ.onclick = function(){
   }
 
   $('#quizModalScrollable').modal('hide')
-  alert(result);
 }
 
 $('#quizModalScrollable').on('hidden.bs.modal', function () {
@@ -81,7 +80,7 @@ $('#quizModalScrollable').on('hidden.bs.modal', function () {
     $('#resultModalCenter').modal('show')
     var output = document.getElementById("result-display-here");
     output.innerHTML = "";
-    var imgPath = "<img height=600 width=800 vertical-align:middle src=../images/:result:.png>"
+    var imgPath = "<img height=600 width=800 vertical-align:middle src=https://kcsigurdson.com/uclax_wcib_week_6_part_2/images/:result:.png>"
     imgPath = imgPath.replace(":result:", result);
     output.innerHTML= imgPath;
   }
